@@ -12,7 +12,7 @@ const KeyCodes = {
 const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
 const SourceTag = () => {
-  const [tags, setTags] = React.useState([{ id: 'movie', text: '영화' }]);
+  const [tags, setTags] = React.useState([]);
 
   const handleDelete = i => {
     setTags(tags.filter((tag, index) => index !== i));

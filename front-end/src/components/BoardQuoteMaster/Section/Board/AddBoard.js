@@ -42,9 +42,7 @@ function AddBoard(props) {
                 </li>
                 <li>
                   <div className="timeView">
-                    <TimeBox>
-                      <UpdateTime time={props.time} />
-                    </TimeBox>
+                    <TimeBox>{props.time}</TimeBox>
                     <ViewCounts>조회수 {props.viewCounts}</ViewCounts>
                   </div>
                 </li>
@@ -81,6 +79,7 @@ function AddBoard(props) {
         </div>
         <div>
           <Content>{props.content}</Content>
+          <Tags> #만화 #베리베리다이스키 #신지상지오 </Tags>
         </div>
         <ButtonBox>
           <div style={{ textAlign: 'left' }}>
@@ -157,7 +156,7 @@ const AddBoardWriter = styled.li`
 const Writer = styled.span`
   width: 60px;
   height: 20px;
-  font-size: 15px;
+  font-size: 13px;
   padding-top: 3px;
   font-family: 'SCDream4R';
   font-weight: 500;
@@ -171,7 +170,7 @@ const Writer = styled.span`
 const OnlyWriter = styled.span`
   width: 60px;
   height: 20px;
-  font-size: 15px;
+  font-size: 13px;
   padding-top: 3px;
   font-family: 'SCDream4R';
   font-weight: 500;
@@ -202,7 +201,7 @@ const ProfileImg = styled.img`
 const TimeBox = styled.div`
   width: 100px;
   height: 30px;
-  font-size: 14px;
+  font-size: 13px;
   padding-top: 3px;
   color: #aaa;
   font-family: 'SCDream';
@@ -214,7 +213,7 @@ const ViewCounts = styled.div`
   margin-left: 10px;
   padding-top: 3px;
   font-family: 'SCDream';
-  font-size: 14px;
+  font-size: 13px;
   color: #aaa;
   font-weight: 900;
 `;
@@ -234,6 +233,7 @@ const InfoBox = styled.li`
 `;
 
 const Content = styled.div`
+  white-space: pre-wrap;
   border-top: 1px solid rgba(0, 0, 0, 0.07);
   font-size: 13px;
   padding-left: 2px;
@@ -251,3 +251,10 @@ const ButtonBox = styled.div`
 `;
 
 const DeleteBoardBox = styled.div``;
+
+const Tags = styled.div`
+  color: #5ba3ad;
+  font-family: 'SCDream4R';
+  font-size: 13px;
+  margin-bottom: 15px;
+`;
