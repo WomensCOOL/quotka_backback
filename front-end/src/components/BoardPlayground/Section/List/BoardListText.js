@@ -15,7 +15,7 @@ const BoardListTextBox = ({}) => {
   return (
     <BoardText>
       <p>
-        쿼트마스터는 여러분들이 따뜻한 명언, 이야기를 공유하는 게시판입니다.
+        쿼카놀이터는 여러분들이 따뜻한 명언, 이야기를 공유하는 게시판입니다.
         Write a Post 버튼을 통해 여러분들의 이야기를 공유해주세요 !
       </p>
     </BoardText>

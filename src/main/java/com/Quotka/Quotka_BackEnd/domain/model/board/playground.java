@@ -30,9 +30,9 @@ public class playground extends BaseTimeEntity {
     @Column(length = 500, name = "play_author")
     private String author;
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = ClubMember.class) //Many = Board, User = One
-    @JoinColumn(name="userId")
-    private ClubMember user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
+//    @ManyToOne(fetch = FetchType.EAGER, targetEntity = ClubMember.class) //Many = Board, User = One
+//    @JoinColumn(name="userId")
+//    private ClubMember user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
 
     @ColumnDefault("0")
     @Column(name = "play_count")

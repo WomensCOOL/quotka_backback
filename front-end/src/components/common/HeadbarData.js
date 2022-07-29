@@ -11,7 +11,7 @@ export const HeadbarData = [
   },
   {
     title: '쿼카놀이터',
-    path: '/playground/boardlist',
+    path: '/board/playGround',
     icon: <BsIcons.BsChatDotsFill />,
     Name: 'nav-text',
   },

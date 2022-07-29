@@ -58,7 +58,7 @@ function App() {
             />
             <Route
               exact
-              path="/playground/boardlist"
+              path="/board/playGround"
               component={Auth(BoardListsPlayground, true)}
             />
             <Route

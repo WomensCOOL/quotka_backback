@@ -29,9 +29,9 @@ public class quoteMaster extends BaseTimeEntity {
     @Column(length = 500, name = "quote_author")
     private String author;
 
-    @ManyToOne(targetEntity = ClubMember.class) //Many = Board, User = One
-    @JoinColumn(name="userId")
-    private ClubMember user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
+//    @ManyToOne(targetEntity = ClubMember.class) //Many = Board, User = One
+//    @JoinColumn(name="userId")
+//    private ClubMember user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
 
     @ColumnDefault("0")
     @Column(name = "quote_count")

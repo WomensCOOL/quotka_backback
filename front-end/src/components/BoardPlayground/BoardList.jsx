@@ -28,7 +28,7 @@ function GetData() {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    Axios.get('/playGround').then(response => {
+    Axios.get('/board/playGround').then(response => {
       setData(response.data);
     });
   }, []);
@@ -38,7 +38,7 @@ function GetData() {
       <CommonTableColumn>{item.id}</CommonTableColumn>
       <CommonTableColumn>{item.title}</CommonTableColumn>
       <CommonTableColumn>{item.author}</CommonTableColumn>
-      <CommonTableColumn>{item.createAt}</CommonTableColumn>
+      <CommonTableColumn>{item.createDate}</CommonTableColumn>
       <CommonTableColumn>{item.count}</CommonTableColumn>
     </CommonTableRow>
   ));
