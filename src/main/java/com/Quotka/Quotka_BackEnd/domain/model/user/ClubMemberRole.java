@@ -1,4 +1,4 @@
-package com.Quotka.Quotka_BackEnd.entity;
+package com.Quotka.Quotka_BackEnd.domain.model.user;
 
 public enum ClubMemberRole {
 

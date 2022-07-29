@@ -2,7 +2,7 @@ package com.Quotka.Quotka_BackEnd.domain.model.reply;
 
 import com.Quotka.Quotka_BackEnd.domain.BaseTimeEntity;
 import com.Quotka.Quotka_BackEnd.domain.model.board.playground;
-import com.Quotka.Quotka_BackEnd.domain.model.user.User;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMember;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -32,9 +32,9 @@ public class playGroundReply extends BaseTimeEntity {
     @JoinColumn(name="playId")
     private playground playground;
 
-    @ManyToOne(targetEntity = User.class)
+    @ManyToOne(targetEntity = ClubMember.class)
     @JoinColumn(name="userId")
-    private User user;
+    private ClubMember user;
 
     @CreationTimestamp
     private Timestamp createDate;

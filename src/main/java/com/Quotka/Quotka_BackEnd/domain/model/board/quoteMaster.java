@@ -1,16 +1,14 @@
 package com.Quotka.Quotka_BackEnd.domain.model.board;
 
 import com.Quotka.Quotka_BackEnd.domain.BaseTimeEntity;
-import com.Quotka.Quotka_BackEnd.domain.model.user.User;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMember;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 
 @Getter
 @Builder
@@ -31,9 +29,9 @@ public class quoteMaster extends BaseTimeEntity {
     @Column(length = 500, name = "quote_author")
     private String author;
 
-    @ManyToOne(targetEntity = User.class) //Many = Board, User = One
+    @ManyToOne(targetEntity = ClubMember.class) //Many = Board, User = One
     @JoinColumn(name="userId")
-    private User user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
+    private ClubMember user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
 
     @ColumnDefault("0")
     @Column(name = "quote_count")

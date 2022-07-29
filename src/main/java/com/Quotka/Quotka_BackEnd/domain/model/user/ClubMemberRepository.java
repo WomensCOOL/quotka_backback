@@ -1,6 +1,6 @@
-package com.Quotka.Quotka_BackEnd.repository;
+package com.Quotka.Quotka_BackEnd.domain.model.user;
 
-import com.Quotka.Quotka_BackEnd.entity.ClubMember;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMember;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

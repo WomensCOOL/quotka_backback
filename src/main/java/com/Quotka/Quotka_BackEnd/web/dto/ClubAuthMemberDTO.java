@@ -17,6 +17,8 @@ import java.util.Map;
 @ToString
 public class ClubAuthMemberDTO extends User implements OAuth2User {
 
+    private Long userId;
+
     private String email;
 
     private String password;

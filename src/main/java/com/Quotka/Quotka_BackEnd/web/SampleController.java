@@ -1,4 +1,4 @@
-package com.Quotka.Quotka_BackEnd.controller;
+package com.Quotka.Quotka_BackEnd.web;
 
 import com.Quotka.Quotka_BackEnd.web.dto.ClubAuthMemberDTO;
 import lombok.extern.log4j.Log4j2;

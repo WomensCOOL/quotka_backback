@@ -1,8 +1,8 @@
 package com.Quotka.Quotka_BackEnd.web.service;
 
-import com.Quotka.Quotka_BackEnd.entity.ClubMember;
-import com.Quotka.Quotka_BackEnd.entity.ClubMemberRole;
-import com.Quotka.Quotka_BackEnd.repository.ClubMemberRepository;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMember;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMemberRole;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMemberRepository;
 import com.Quotka.Quotka_BackEnd.web.dto.ClubAuthMemberDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;

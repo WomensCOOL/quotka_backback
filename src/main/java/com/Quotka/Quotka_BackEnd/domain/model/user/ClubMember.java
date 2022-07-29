@@ -1,11 +1,8 @@
-package com.Quotka.Quotka_BackEnd.entity;
+package com.Quotka.Quotka_BackEnd.domain.model.user;
 
 import lombok.*;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -17,10 +14,17 @@ import java.util.Set;
 public class ClubMember extends BaseEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "userId")
+    private Long userId;
+
+    @Column(length = 50)
     private String email;
 
+    @Column(length = 100)
     private String password;
 
+    @Column(length = 30)
     private String name;
 
     private boolean fromSocial;

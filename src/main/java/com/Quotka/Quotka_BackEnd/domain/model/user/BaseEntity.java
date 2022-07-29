@@ -1,4 +1,4 @@
-package com.Quotka.Quotka_BackEnd.entity;
+package com.Quotka.Quotka_BackEnd.domain.model.user;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

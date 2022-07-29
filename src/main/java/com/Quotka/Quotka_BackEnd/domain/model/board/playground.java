@@ -2,7 +2,7 @@ package com.Quotka.Quotka_BackEnd.domain.model.board;
 
 import com.Quotka.Quotka_BackEnd.domain.BaseTimeEntity;
 import com.Quotka.Quotka_BackEnd.domain.model.reply.playGroundReply;
-import com.Quotka.Quotka_BackEnd.domain.model.user.User;
+import com.Quotka.Quotka_BackEnd.domain.model.user.ClubMember;
 import lombok.*;
 
 import org.hibernate.annotations.ColumnDefault;
@@ -30,9 +30,9 @@ public class playground extends BaseTimeEntity {
     @Column(length = 500, name = "play_author")
     private String author;
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = User.class) //Many = Board, User = One
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = ClubMember.class) //Many = Board, User = One
     @JoinColumn(name="userId")
-    private User user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
+    private ClubMember user; //DB는 오브젝트를 저장할 수 없다. FK, 자바는 오브젝트를 저장할 수 있다.
 
     @ColumnDefault("0")
     @Column(name = "play_count")
