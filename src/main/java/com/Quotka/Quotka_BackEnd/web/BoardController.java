@@ -46,18 +46,19 @@ public class BoardController {
 
     @GetMapping("/quoteMasterForm")
     public String quoteMasterForm(Model model) {
-        model.addAttribute("quoteMasterForm", new quoteMaster());
+        model.addAttribute("quoteMaster", new quoteMaster());
         return "board/quoteMasterForm";
     }
 
 //    @Autowired
 //    private quoteMasterRepo quoteMasterRepo;
 
-    @PostMapping("/quoteMasterFormPro")
-    public String quoteMasterFormSubmit(@ModelAttribute quoteMaster quoteMaster){
-        quoteMasterService.save(quoteMaster);
-        return "redirect:/board/quoteMaster";
-    }
+//    @PostMapping("/quoteMasterForm")
+//    public String quoteMasterFormSubmit(@ModelAttribute quoteMaster quoteMaster){
+////        quoteMasterService.save(quoteMaster);
+//        quoteMasterRepo.save(quoteMaster);
+//        return "redirect:/board/quoteMaster";
+//    }
 
     @GetMapping("/playGroundForm")
     public String playGroundForm(@ModelAttribute playground playground, Model model) {

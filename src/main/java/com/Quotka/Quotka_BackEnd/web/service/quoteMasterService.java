@@ -19,19 +19,20 @@ public class quoteMasterService {
     @Autowired
     private quoteMasterRepo quoteMasterRepo;
 
-//    @Transactional
-//    public Long save(quoteMasterSaveRequestDto quoteMasterRequestDto) {
-////        playGroundSaveRequestDto.setUser(user);
-//        return quoteMasterRepo.save(quoteMasterRequestDto.toEntity()).getId();
-//    }
+    @Transactional
+    public Long save(quoteMasterSaveRequestDto quoteMasterRequestDto) {
+//        playGroundSaveRequestDto.setUser(user);
+        return quoteMasterRepo.save(quoteMasterRequestDto.toEntity()).getId();
+    }
 
     public List<quoteMaster> quoteMasterList() {
         return quoteMasterRepo.findAll();
     }
 
-    public void save(quoteMaster quoteMaster) {
-        quoteMasterRepo.save(quoteMaster);
-    }
+//    public void save(quoteMaster quoteMaster) {
+//        quoteMasterRepo.save(quoteMaster);
+//    }
+
     @Transactional
     public Long update(Long id, quoteMasterUpdateRequestDto quoteMasterUpdateRequestDto) {
         quoteMaster quoteMaster = quoteMasterRepo.findById(id)

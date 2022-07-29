@@ -7,7 +7,7 @@
 <main class="container">
     <div class="bg-light p-5 rounded">
         <h1>쿼트마스터 글쓰기</h1>
-        <form action="#" th:action="@{/board/quoteMasterFormPro}" th:object="${quoteMasterForm}" method="post">
+        <form action="#" th:action="@{/board/quoteMasterForm}" th:object="${quoteMaster}" method="post">
           <div class="mb-3">
             <label for="title" class="form-label"></label>
             <input type="text" class="form-control" id="title" th:field="*{title}" placeholder="제목을 입력하세요.">
@@ -16,7 +16,7 @@
             <label for="content" class="form-label"></label>
             <textarea class="form-control" id="content" rows="20" th:field="*{content}" placeholder="내용을 작성하세요."></textarea>
           </div>
-          <button class="btn btn-lg btn-primary" type="submit">게시글 등록</button>
+          <button class="btn btn-lg btn-primary" type="submit" id="btn-save">게시글 등록</button>
           <a class="btn btn-lg btn-primary" role="button" th:href="@{/board/quoteMaster}">취소</a>
         </form>
     </div>

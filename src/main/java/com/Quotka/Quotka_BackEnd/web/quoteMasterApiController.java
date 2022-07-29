@@ -13,10 +13,12 @@ public class quoteMasterApiController {
     @Autowired
     private quoteMasterService quoteMasterService;
 
-//    @PostMapping("/quoteMasterForm")
-//    public Long save(@RequestBody quoteMasterSaveRequestDto quoteMasterSaveRequestDto) {
-//        return quoteMasterService.save(quoteMasterSaveRequestDto);
-//    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/api/v1/quoteMasterForm")
+//    @PatchMapping("/api/v1/quoteMasterForm")
+    public Long save(@RequestBody quoteMasterSaveRequestDto quoteMasterSaveRequestDto) {
+        return quoteMasterService.save(quoteMasterSaveRequestDto);
+    }
 
 //    @PostMapping("/quoteMasterForm")
 //    public String quoteMasterFormSubmit(quoteMasterSaveRequestDto quoteMasterRequestDto){
