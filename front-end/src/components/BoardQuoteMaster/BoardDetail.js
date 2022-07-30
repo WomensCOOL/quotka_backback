@@ -19,7 +19,7 @@ const boardWriterNew = '쿼억하';
 const boardTitleNew = '내가 사랑한 것들';
 const boardContentNew =
   '아빠는 말씀하셨다. 너무 작은 것들까지 사랑하지 말라고. 작은 것들은 하도 많아서 네가 사랑한 그 많은 것들이 언젠간 모두 널 울리게 할 테니까. \n\n 나는 나쁜 아이였나 보다. 아빠가 그렇게 말씀하셨음에도 나는 빨간 꼬리가 예쁜 플라밍고 구피를 사랑했고 비 오는 날 무작정 대한 날 따라왔던 하얀 강아지를 사랑했고 분홍색 끈이 예뻤던 내 여름 샌들을 사랑했으며 크리스마스 선물로 받은 갈색 긴 머리 인형을 사랑했었고, 내 머리를 쓱쓱 문질러대던 아빠의 커다란 손을 사랑했었다. \n\n 그래서 구피가 죽었을 때, 강아지를 잃어버렸을 때, 샌들이 낡아 버려야 했을 때, 이사를 오며 인형을 버렸을 때 그리고, 아빠가 돌아가셨을 때 그때마다 난 울어야 했다. \n\n 아빠 말씀이 옳았다. 내가 사랑한 것들은 언젠간 날 울게 만든다.';
-const boardViewCounts = '33';
+const boardViewCounts = '0';
 
 const commentIdNew = 'commentId';
 const commentUserNew = 'commentUser';

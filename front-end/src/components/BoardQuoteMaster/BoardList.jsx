@@ -88,7 +88,7 @@ function BoardList(history) {
             <tr>
               <td>2</td>
               <td className="listtitle">당신은 소심한 타자입니다</td>
-              <td>배트웅</td>
+              <td>쿼억카</td>
               <td>2022-07-25</td>
               <td>20</td>
             </tr>

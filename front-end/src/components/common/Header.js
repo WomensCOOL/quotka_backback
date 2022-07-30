@@ -64,7 +64,7 @@ const Header = props => {
                   <input
                     type="text"
                     className="userName"
-                    value={userName + '쿼억하' + '님!'}
+                    value={userName + '쿼억카' + '님!'}
                     readOnly
                   />
                 </Link>
